@@ -14,22 +14,36 @@ up on you, however killing them will grant you health and mana back!
 
 # **Controls**
 *Movement:* {Up}, {Down}, {Left}, {Right} or {W}, {S}, {A}, {D}
+
 *Shoot:* {Left-Mouse}
+
 *Zoom-In:* {V}
+
 *Zoom-Out:* {Shift+V}
+
 *Pause game:* {Spacebar}
+
 *New game:* {Shift+Spacebar}
+
 *Quit Application:* {Escape}
 
 # **Debug**
 *Enter debug mode:* {Shift+`}
+
 *Enter or leave god mode:* {G}
+
 *Change player position to god mode position:* {Shift+G}
+
 *Show all path’s:* {1}
+
 *Show wander path’s:* {2}
+
 *Show pursue path’s:* {3}
+
 *Show kamikaze path’s:* {4}
+
 *Show recover path’s:* {5}
+
 *Show hide intersection’s:* {6} 
 
 # **Features**
@@ -125,7 +139,7 @@ find a close by intersecting cell to hide in while fleeing.
   - **Fear:** Same concept as above but with the fear parameter. The outcome can be:
   Anxious, Neutral or Warrior.
 
-  - Ammo: Outcomes: Full, Midway or Empty.
+  - **Ammo:** Outcomes: Full, Midway or Empty.
 
-  - Evaluate: It all boils down to this function where the logic is used to evaluate if
+  - **Evaluate:** It all boils down to this function where the logic is used to evaluate if
   the enemy needs to change its state.
