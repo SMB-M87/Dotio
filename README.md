@@ -1,57 +1,31 @@
 # **Dotio**
 The purple circle is the player character the red ones are NPC’s. When running the application
-you’ll immediately be in a game, on the bottom left corner you’ll notice your stats. The red bar is
-your health, the blue one represent your mana and the green one is your bullet velocity.
-You can kill enemies in two di@erent manners by shooting at them which will drain your mana
-bar or by hitting them. Your mana and health regenerates over time. Shooting an enemy down
-will restore some health if any was lost and upgrade your bullet velocity upon 100kills. Hitting an
-enemy will restore mana. Enemies patrol around and will only start attacking you when you’re in their line of sight,
-meanwhile when activated they will chase you. Enemies also need to regenerate from time to
-time and will not be able to shoot at you in that state. You may be noticing them flee or stand still
-somewhere hiding from you, killing them will give your health and mana back. Watch out for
-enemies with a slight pinkish tint, they’re in full kamikaze modus and will not stop until they blow
-up on you, however killing them will grant you health and mana back!
+you’ll immediately be in a game, on the bottom left corner you’ll notice your stats. The red bar is your health, the blue one represent your mana and the green one is your bullet velocity. You can kill enemies in two different manners by shooting at them which will drain your mana bar or by hitting them. Your mana and health regenerates over time. Shooting an enemy down will restore some health if any was lost and upgrade your bullet velocity upon 100kills. Hitting an enemy will restore mana. Enemies patrol around and will only start attacking you when you’re in their line of sight, meanwhile when activated they will chase you. Enemies also need to regenerate from time to time and will not be able to shoot at you in that state. You may be noticing them flee or stand still somewhere hiding from you, killing them will give your health and mana back. Watch out for enemies with a slight pinkish tint, they’re in full kamikaze modus and will not stop until they blow up on you, however killing them will grant you health and mana back!
+
+![Image of recreated skatepark](image.png)
 
 # **Controls**
-*Movement:* {Up}, {Down}, {Left}, {Right} or {W}, {S}, {A}, {D}
-
-*Shoot:* {Left-Mouse}
-
-*Zoom-In:* {V}
-
-*Zoom-Out:* {Shift+V}
-
-*Pause game:* {Spacebar}
-
-*New game:* {Shift+Spacebar}
-
-*Quit Application:* {Escape}
+*Movement:* {Up}, {Down}, {Left}, {Right} or {W}, {S}, {A}, {D}  
+*Shoot:* {Left-Mouse}  
+*Zoom-In:* {V}  
+*Zoom-Out:* {Shift+V}  
+*Pause game:* {Spacebar}  
+*New game:* {Shift+Spacebar}  
+*Quit Application:* {Escape}  
 
 # **Debug**
-*Enter debug mode:* {Shift+`}
-
-*Enter or leave god mode:* {G}
-
-*Change player position to god mode position:* {Shift+G}
-
-*Show all path’s:* {1}
-
-*Show wander path’s:* {2}
-
-*Show pursue path’s:* {3}
-
-*Show kamikaze path’s:* {4}
-
-*Show recover path’s:* {5}
-
-*Show hide intersection’s:* {6} 
+*Enter debug mode:* {Shift+`}  
+*Enter or leave god mode:* {G}  
+*Change player position to god mode position:* {Shift+G}  
+*Show all path’s:* {1}  
+*Show wander path’s:* {2}  
+*Show pursue path’s:* {3}  
+*Show kamikaze path’s:* {4}  
+*Show recover path’s:* {5}  
+*Show hide intersection’s:* {6}  
 
 # **Features**
-This project was built by hand from the ground up without any external libraries in C++. We used
-native Win32 API for OS manipulation. For handling graphics Direct2D from Win32 API was used.
-A lot of labor went into the basic features that are taken for granted, like creating a window,
-keyboard, mouse handling, collision, etc. While those features are an achievement in itself, this
-chapter will highlight the features that are related to algorithms and artificial intelligence.
+This project was built by hand from the ground up without any external libraries in C++. We used native Win32 API for OS manipulation. For handling graphics Direct2D from Win32 API was used. A lot of labor went into the basic features that are taken for granted, like creating a window, keyboard, mouse handling, collision, etc. While those features are an achievement in itself, this chapter will highlight the features that are related to algorithms and artificial intelligence.
 
 - **Seek/Flee/Wander**
 Basic steering behavior where enemies follow the player/path if there are no
@@ -76,7 +50,7 @@ Enemies should not go through each other. In our implementation the enemies can 
 each other out of the way. This algorithm makes use of spatial partitioning.
 
 - **Spatial partitioning**
-For collision detection between enemies it would be very ine$icient to compare
+For collision detection between enemies it would be very inefficient to compare
 distances between all enemies for all enemies. A map keeps track of which enemies are
 on which cell.
 
