@@ -2,7 +2,7 @@
 The purple circle is the player character the red ones are NPC’s. When running the application
 you’ll immediately be in a game, on the bottom left corner you’ll notice your stats. The red bar is your health, the blue one represent your mana and the green one is your bullet velocity. You can kill enemies in two different manners by shooting at them which will drain your mana bar or by hitting them. Your mana and health regenerates over time. Shooting an enemy down will restore some health if any was lost and upgrade your bullet velocity upon 100kills. Hitting an enemy will restore mana. Enemies patrol around and will only start attacking you when you’re in their line of sight, meanwhile when activated they will chase you. Enemies also need to regenerate from time to time and will not be able to shoot at you in that state. You may be noticing them flee or stand still somewhere hiding from you, killing them will give your health and mana back. Watch out for enemies with a slight pinkish tint, they’re in full kamikaze modus and will not stop until they blow up on you, however killing them will grant you health and mana back!
 
-![Image of recreated skatepark](Docs/image.png)
+![Image of recreated skatepark](docs/image.png)
 
 https://github.com/user-attachments/assets/1daefe93-03ed-4b54-bdbe-88412af19179
 
